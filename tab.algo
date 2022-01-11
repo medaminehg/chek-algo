@@ -1,0 +1,16 @@
+ALGORITHM algorithm_2
+VAR
+  var t:= tableau
+  var aux : INTEGER                    
+BEGIN
+  write("donner x");
+  read(x)
+  write("donner leur position")
+  read(p)
+FOR i FROM p TO t.longueur+1 STEP 1  DO
+    aux:=t[i]
+    t[i]:=x
+    x:=aux
+END_FOR
+
+END

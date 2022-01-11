@@ -1,0 +1,28 @@
+ALGORITHM alro-ch
+VAR
+   var test:BOOLEAN
+   var i:INTEGER
+BEGIN
+    write("donner chaine 1")
+    read(ch1)
+    write("donner chaine 2")
+    read(ch2)
+    i:=1
+    test:=true
+     IF (ch1.longeur = ch2.longeur) THEN
+     WHILE (test = true and i< ch1.longeur) DO
+         IF (ch1[i]!=ch2[i]) THEN
+             test:=false
+         END_IF
+         i++
+     END_WHILE
+
+     ELSE
+         test:=false
+     END_IF
+     IF (test= true) THEN
+        write ("les deux chaines sans valide ")
+     ELSE
+         write ("les deux chaines sans non valide ")
+     END_IFf
+END
